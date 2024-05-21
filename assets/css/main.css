@@ -65,7 +65,7 @@
 }
 .testimonial:after{
 content: '';
-border-top:30px solid #949292 ;
+border-top:30px solid #898888 ;
 border-bottom:30px solid transparent;
 border-left:30px solid transparent ;
 position: absolute;
