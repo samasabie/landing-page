@@ -45,7 +45,7 @@
 
 .testimonials .row{
     gap: 40px;
- 
+    display: flex;
 }
 .testimonial .user-info{
     display: flex;
