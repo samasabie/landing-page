@@ -21,6 +21,26 @@
     display: flex;
     gap: 16px;
 }
+@media (max-width:1024px){
+  .nav ul{
+  font-size: smaller;
+  }
+  .header .logo{
+    font-size: smaller;
+  }
+ 
+}
+.header .menu{
+  display: none;
+}
+@media (max-width:768px) {
+  .header .menu{
+    display: block;
+  }
+  .nav ul{
+    display: none;
+    }
+}
 .header .auth a{
     font-family: var(--subfont);
     padding: 10px 30px;
@@ -28,6 +48,12 @@
 .header .auth a:first-of-type{
     border: 1px solid var(--maincolor);
     color: var(--maincolor);
+}
+@media (max-width:1024px) {
+  .header .auth a{
+    padding: 5px 10px;
+    font-size: smaller;
+  }
 }
 .header .auth a:last-of-type{
     background: var(--maincolor);
@@ -39,7 +65,9 @@
     margin-top: 10px;
     height: 450x;
     background-color: #F5F5F5;
+    
 }
+
 .home .home-left span{
     color:#545BE8;
     font-family: Inter;
@@ -71,20 +99,15 @@ width: 230px;
 margin-top: 20px;
 font-family: var(--mainfont);
 width: 350px;
-font-size: 10px;
 color: #969696; 
 }
 .home .home-left .Register-watch{
-display: flex;
-margin-top: 10px;
-align-items: center;
-    
+  display: flex;
 }
 .home .home-left .Register-watch a{
 font-family: var(--subfont);
 padding: 10px 30px;
 align-items: center;
-
 
 }
 .home .home-left .Register-watch a:first-of-type{
@@ -104,10 +127,17 @@ align-items: center;
 .home .home-right{
     width: calc(100% - 60px / 2);
 }
+@media (max-width:768px) {
+.home .row{
+  flex-direction: column;
+}
+
+}
 .home .home-right img{
     height: 400px;
     width: 400px;
 }
+
 /*end home*/
 /*start Forms*/
 .forms{
@@ -119,9 +149,10 @@ align-items: center;
   border: var(--maincolor) solid 1px;
   padding: 40px 15px;
   background-color: var(--maincolor);
-border-radius: 10px;
-margin-left: 8px;
+  border-radius: 10px;
+  margin-left: 8px;
 }
+
 .talk{
 font-size: larger;
 font-weight: bold;
@@ -134,7 +165,6 @@ font-weight: bold;
 font-size: 10px;
 line-height: 10px;
 text-align: left;
- 
 color: #969696;
 }
 .part1 img{
@@ -362,6 +392,14 @@ right: 0;
     display: inline-block;
     padding: 0 20px;
 }
+@media (max-width:700px) {
+  .testimonials .row{
+    flex-direction: column;
+  }
+  .testimonial  blockquote p{
+    font-size: 14px;
+  }
+}
 
 /*start  footer*/
 .footer{
@@ -380,6 +418,7 @@ right: 0;
 .footer .footer-right{
     width: calc(100% - 40px / 2);
 }
+
 .footer-left{
     display: flex;
     flex-direction: column;
